@@ -1,0 +1,40 @@
+html, body{
+    margin:0;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    width:100%;
+    height:100vh;
+    background: #313131;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    /* grid-template-rows: repeat (2, 1fr); */
+    /* grid-auto-rows: minmax(700px, 1fr); */
+        .box {
+        &:nth-child(1)){
+            background:#151515;
+        }
+        &:nth-child(2){
+            background-color:skyblue;
+        }
+        &:nth-child(3){
+            background-color:yellow;
+        }
+        &:nth-child(4){
+            background-color:red;
+        }
+    }
+
+} 
+
+
